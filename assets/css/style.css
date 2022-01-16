@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+:root {
+  --blue: #335eea;
+  --darkBlue: #294bbb;
+  --bgColor: #f9f9f9;
+  --white: white;
+  --gray: #737985;
+  --lightGray: #c4c4c4;
+  --lightOrange: #f6ba65;
+  --blendBlue: #0b2d86;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
+.pageHeader {
+  position: relative;
+  background-color: #122d86;
+  color: #fff;
+  background-image: url(https://images.unsplash.com/photo-1642219232119-a43a8451fbf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+  background-blend-mode: difference;
+  height: 200px;
+}
+
+.langar {
+  font-family: "Langar", cursive;
+}
+
+.branding {
+  margin: 10px;
+  position: absolute;
+}
+
+.branding a {
+  font-size: 28px;
+  color: white;
+}
+
+.box-outer-container {
+  width: 450px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.box-inner-container {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0.5px #6b6b6b4a;
+  color: black;
+  padding: 18px;
+}
+
+.box-inner-container p {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.create-poll-fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container {
+  width: 80%;
+  margin: 5px;
+}
+
+.input-container input::placeholder {
+  color: var(--blue);
+  font-family: "Langar", cursive;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--darkBlue);
+  font-weight: 400;
+  font-size: 18px;
+  border: 1px solid var(--blendBlue);
+}
+
+.custom-btn-container {
+  width: 20%;
+  padding: 0 5px;
+  margin: 5px;
+}
+
+.custom-btn-container button {
+  background-color: var(--darkBlue);
+  width: 100%;
+  color: white;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 50ms linear;
+  font-size: 18px;
+  font-family: "Langar", cursive;
+}
+
+.custom-btn-container button:hover {
+  transform: scale(1.001);
+  background-color: var(--blendBlue);
+}
+
+.heading {
+  font-size: 18px;
+}
+
+.spacer {
+  height: 140px;
+}
+
+.polls {
+  cursor: pointer;
+  padding: 10px;
+  margin: 15px 5px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 5px 1px #6b6b6b4a;
+  transition: all 500ms ease-in-out;
+}
+
+.polls:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  background-color: var(--lightGray);
+  padding: 5px;
+  min-height: 50px;
+  min-height: 50px;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 50px;
+  background-color: var(--white);
+}
+
+.footer-text {
+  font-size: 20px;
+  color: var(--blendBlue);
+  text-align: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .box-outer-container {
+    width: 100%;
+  }
+
+  .create-poll-fields {
+    flex-direction: column;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .custom-btn-container {
+    margin: 5px 0;
+  }
+
+  .custom-btn-container button {
+    width: 80px;
+  }
+}
